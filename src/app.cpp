@@ -2,8 +2,6 @@
 #include "widget.hpp"
 #include "graphics.hpp"
 
-#include <ctime>
-
 using namespace genv;
 
 App::App(int width, int height) :

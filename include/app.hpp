@@ -2,7 +2,6 @@
 #define APP_HPP
 
 class Widget;
-#include <string>
 #include <vector>
 
 class App
