@@ -19,3 +19,8 @@ bool Widget::is_inside(int m_x, int m_y)
 {
     return _x <= m_x && m_x <= _x+_w && _y <= m_y && m_y <= _y+_h;
 }
+
+void Widget::kiv_setter(bool kiv)
+{
+    _kiv = kiv;
+}

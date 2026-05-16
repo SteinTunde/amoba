@@ -10,7 +10,7 @@ class Szamolo : public Widget
         Szamolo(App* parent, int x, int y, int w, int h, int counter, int also_h, int felso_h);
         virtual ~Szamolo();
 
-        void draw_ifkiv(bool) override;
+        void draw() override;
         void handle(genv::event) override;
         std::string Get() override;
 

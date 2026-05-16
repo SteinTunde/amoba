@@ -10,11 +10,11 @@ Szamolo::Szamolo(App* parent,
 {
     //ctor
 }
-void Szamolo::draw_ifkiv(bool kiv)
+void Szamolo::draw()
 {
     int ch_szin = 0;
     int ch_szeg = 0;
-    if (kiv){
+    if (_kiv){
         ch_szin = 60;
         ch_szeg = 2;
     }

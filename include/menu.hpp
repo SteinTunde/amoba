@@ -15,7 +15,7 @@ class Menu : public Widget
         Menu(App* parent, int x, int y, int w, int h, vector<string>, int hany);
         virtual ~Menu();
 
-        void draw_ifkiv(bool) override;
+        void draw() override;
         void handle(genv::event ev) override;
         string Get() override;
 

@@ -11,11 +11,11 @@ Menu::Menu(App* parent,
 
     //fej tor potroh :)
 }
-void Menu::draw_ifkiv(bool kiv)
+void Menu::draw()
 {
     int ch_szin = 0;
     int ch_szeg = 0;
-    if (kiv){
+    if (_kiv){
         ch_szin = 60;
         ch_szeg = 2;
     }

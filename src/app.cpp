@@ -2,6 +2,8 @@
 #include "widget.hpp"
 #include "graphics.hpp"
 
+#include <ctime>
+
 using namespace genv;
 
 App::App(int width, int height) :
@@ -13,13 +15,13 @@ App::App(int width, int height) :
 
 App::~App()
 {
-    for (Widget* w: _widgets){
-        delete w;
+    for (Widget* wg: _widgets){
+        delete wg;
     }
 }
 void App::event_loop()
 {
-    //gout << font("LiberationSans-Regular.ttf",20);
+    gout << font("LiberationSans-Regular.ttf",20);
     //gout << text("hello world");
     gout << refresh;
     event ev;
@@ -27,9 +29,13 @@ void App::event_loop()
     int kiv_ind = -1;
     while(gin >> ev && ev.keycode != key_escape)
     {
-        gout << color(132, 255, 255) << move_to(0,0) << box_to(_width-1, _height-1);
+        gout << color(200, 255, 255) << move_to(0,0) << box_to(_width-1, _height-1);
         if (ev.type == ev_mouse && ev.button == btn_left){
-            kiv_ind = -1;
+            if (kiv_ind != -1){
+                _widgets[kiv_ind]->kiv_setter(0);
+                kiv_ind = -1;
+            }
+
             for (int i=0; i<_widgets.size(); i++){
                 if (_widgets[i]->is_inside(ev.pos_x, ev.pos_y)){
                     kiv_ind = i;
@@ -46,9 +52,10 @@ void App::event_loop()
         }*/
         if (kiv_ind != -1){
             _widgets[kiv_ind]->handle(ev);
+            _widgets[kiv_ind]->kiv_setter(1);
         }
         for (int i=0; i<_widgets.size(); i++){
-            _widgets[i]->draw_ifkiv(i==kiv_ind);
+            _widgets[i]->draw();
         }
         gout << refresh;
 
@@ -66,3 +73,5 @@ void App::register_w(Widget* w)
 {
     _widgets.push_back(w);
 }
+
+
