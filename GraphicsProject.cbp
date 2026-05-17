@@ -62,6 +62,7 @@
 		</Unit>
 		<Unit filename="include/app.hpp" />
 		<Unit filename="include/cell.hpp" />
+		<Unit filename="include/mainapp.hpp" />
 		<Unit filename="include/menu.hpp" />
 		<Unit filename="include/szamolo.hpp" />
 		<Unit filename="include/widget.hpp" />
@@ -71,6 +72,7 @@
 		</Unit>
 		<Unit filename="src/app.cpp" />
 		<Unit filename="src/cell.cpp" />
+		<Unit filename="src/mainapp.cpp" />
 		<Unit filename="src/menu.cpp" />
 		<Unit filename="src/szamolo.cpp" />
 		<Unit filename="src/widget.cpp" />

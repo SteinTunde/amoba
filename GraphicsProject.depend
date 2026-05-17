@@ -1657,11 +1657,12 @@
 
 1775765681 c:\users\tunde_nik7u\documents\dokumentumok_fr\egyetem\bevprog\2526_2\bead3\graphicslib\keytbl.h
 
-1778965379 source:c:\users\tunde_nik7u\documents\dokumentumok_fr\egyetem\bevprog\2526_2\bead3\main.cpp
+1779052472 source:c:\users\tunde_nik7u\documents\dokumentumok_fr\egyetem\bevprog\2526_2\bead3\main.cpp
 	"app.hpp"
 	"widget.hpp"
 	"cell.hpp"
 	"mainapp.hpp"
+	<ctime>
 
 1775765681 c:\users\tunde_nik7u\documents\dokumentumok_fr\egyetem\bevprog\2526_2\bead3\include\graphics.hpp
 	<string>
@@ -1701,22 +1702,21 @@
 	"widget.hpp"
 	"graphics.hpp"
 
-1778966517 source:c:\users\tunde_nik7u\documents\dokumentumok_fr\egyetem\bevprog\2526_2\bead3\src\cell.cpp
+1779052801 source:c:\users\tunde_nik7u\documents\dokumentumok_fr\egyetem\bevprog\2526_2\bead3\src\cell.cpp
 	"cell.hpp"
 	"mainapp.hpp"
 
-1778962957 c:\users\tunde_nik7u\documents\dokumentumok_fr\egyetem\bevprog\2526_2\bead3\include\cell.hpp
+1779020016 c:\users\tunde_nik7u\documents\dokumentumok_fr\egyetem\bevprog\2526_2\bead3\include\cell.hpp
 	"widget.hpp"
 	<functional>
 
-1778965274 c:\users\tunde_nik7u\documents\dokumentumok_fr\egyetem\bevprog\2526_2\bead3\include\mainapp.hpp
+1779050478 c:\users\tunde_nik7u\documents\dokumentumok_fr\egyetem\bevprog\2526_2\bead3\include\mainapp.hpp
 	"app.hpp"
 	"cell.hpp"
 	<vector>
 	<string>
 
-1778966517 source:c:\users\tunde_nik7u\documents\dokumentumok_fr\egyetem\bevprog\2526_2\bead3\src\mainapp.cpp
+1779052573 source:c:\users\tunde_nik7u\documents\dokumentumok_fr\egyetem\bevprog\2526_2\bead3\src\mainapp.cpp
 	"mainapp.hpp"
 	<vector>
-	<ctime>
 

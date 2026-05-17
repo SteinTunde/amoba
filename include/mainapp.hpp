@@ -14,9 +14,16 @@ class MainApp : public App
         MainApp(int, int);
         virtual ~MainApp();
         virtual void Player2();
+        virtual void StepHappened();
+        virtual bool CheckWin(std::string);
+        virtual bool inside(int, int);
+        virtual bool GetGameOver();
+        virtual std::string GetWinner();
 
     protected:
         std::vector<Cell*> _cells;
+        bool _game_over = 0;
+        std::string _winner = "";
     private:
 };
 
