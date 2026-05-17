@@ -1657,10 +1657,7 @@
 
 1775765681 c:\users\tunde_nik7u\documents\dokumentumok_fr\egyetem\bevprog\2526_2\bead3\graphicslib\keytbl.h
 
-1779052472 source:c:\users\tunde_nik7u\documents\dokumentumok_fr\egyetem\bevprog\2526_2\bead3\main.cpp
-	"app.hpp"
-	"widget.hpp"
-	"cell.hpp"
+1779055514 source:c:\users\tunde_nik7u\documents\dokumentumok_fr\egyetem\bevprog\2526_2\bead3\main.cpp
 	"mainapp.hpp"
 	<ctime>
 
@@ -1710,13 +1707,13 @@
 	"widget.hpp"
 	<functional>
 
-1779050478 c:\users\tunde_nik7u\documents\dokumentumok_fr\egyetem\bevprog\2526_2\bead3\include\mainapp.hpp
+1779055441 c:\users\tunde_nik7u\documents\dokumentumok_fr\egyetem\bevprog\2526_2\bead3\include\mainapp.hpp
 	"app.hpp"
 	"cell.hpp"
 	<vector>
 	<string>
 
-1779052573 source:c:\users\tunde_nik7u\documents\dokumentumok_fr\egyetem\bevprog\2526_2\bead3\src\mainapp.cpp
+1779057194 source:c:\users\tunde_nik7u\documents\dokumentumok_fr\egyetem\bevprog\2526_2\bead3\src\mainapp.cpp
 	"mainapp.hpp"
 	<vector>
 

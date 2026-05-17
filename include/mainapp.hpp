@@ -22,7 +22,7 @@ class MainApp : public App
 
     protected:
         std::vector<Cell*> _cells;
-        bool _game_over = 0;
+        bool _game_over;
         std::string _winner = "";
     private:
 };

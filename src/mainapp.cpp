@@ -3,7 +3,7 @@
 #include <vector>
 using namespace std;
 
-MainApp::MainApp(int W, int H) : App(W, H)
+MainApp::MainApp(int W, int H) : App(W, H), _game_over(0), _winner("")
 {
     for (int i=0; i<15; i++){
         for (int j=0; j<15; j++){
@@ -24,14 +24,12 @@ void MainApp::StepHappened()
     if (CheckWin("x")){
         _game_over = 1;
         _winner = "you win! (yey)";
-        //valami grafikus kimenet how jdslhdla
         return;
     }
     Player2();
     if (CheckWin("o")){
         _game_over = 1;
         _winner = "defeat :(";
-        //valami grafikus kimenet how jdslhdla
         return;
     }
     bool dontetlen = 1;
@@ -44,7 +42,6 @@ void MainApp::StepHappened()
     if (dontetlen){
         _game_over = 1;
         _winner = "nyakkendo (tie)";
-        //valami grafikus kimenet how jdslhdla
         return;
     }
 
@@ -57,9 +54,25 @@ void MainApp::Player2()
         return;
     }
     vector<int> ures;
-    for (int i=0; i<_cells.size(); i++){
-        if (_cells[i]->Get() == ""){
-            ures.push_back(i);
+    int direction[4][2] = {{0,1}, {1,0}, {1,1}, {1,-1}};
+    for (int sor=0; sor<15; sor++){
+        for (int oszlop=0; oszlop<15; oszlop++){
+            if (_cells[sor*15+oszlop]->Get() != ""){
+                for (int d=0; d<4; d++){
+                    int teszt_sor = sor + direction[d][0];
+                    int teszt_oszlop = oszlop + direction[d][1];
+
+                    if (!inside(teszt_sor, teszt_oszlop)){
+                        break;
+                    }
+                    else {
+                        int teszt_index = teszt_sor * 15 + teszt_oszlop;
+                        if (_cells[teszt_index]->Get() == ""){
+                            ures.push_back(teszt_index);
+                        }
+                    }
+                }
+            }
         }
     }
     if (ures.empty()){

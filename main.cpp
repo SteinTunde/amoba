@@ -1,16 +1,6 @@
-#include "app.hpp"
-#include "widget.hpp"
-//#include "szamolo.hpp"
-//#include "menu.hpp"
-#include "cell.hpp"
 #include "mainapp.hpp"
 
-
 #include <ctime>
-
-using namespace std;
-using namespace genv;
-
 
 int main()
 {
